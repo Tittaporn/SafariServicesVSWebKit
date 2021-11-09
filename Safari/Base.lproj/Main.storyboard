@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w9y-IN-Qjp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Safari View Controller-->
+        <scene sceneID="1dZ-Sf-WY5">
+            <objects>
+                <viewController id="w9y-IN-Qjp" customClass="SafariViewController" customModule="Safari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vPy-hC-FB9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZKt-Bb-5Gh">
+                                <rect key="frame" x="41.5" y="184" width="331" height="538"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnF-4K-gcL">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="83.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="GO TO AE WEBSITE"/>
+                                        <connections>
+                                            <action selector="goToWesiteTapped:" destination="w9y-IN-Qjp" eventType="touchUpInside" id="7ro-Z9-YFU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgb-GE-NYG">
+                                        <rect key="frame" x="0.0" y="113.5" width="331" height="83.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="GO TO REWARD WEBSITE"/>
+                                        <connections>
+                                            <action selector="goToAERewardWesiteTapped:" destination="w9y-IN-Qjp" eventType="touchUpInside" id="8AK-lU-jMP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJC-39-SvJ">
+                                        <rect key="frame" x="0.0" y="227" width="331" height="84"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="GO TO STATUS LEVEL WEBSITE"/>
+                                        <connections>
+                                            <action selector="goToStatusLevelTapped:" destination="w9y-IN-Qjp" eventType="touchUpInside" id="7yB-Jz-rsR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEn-8l-y1l">
+                                        <rect key="frame" x="0.0" y="341" width="331" height="83.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="GO TO BLOG WEBSITE"/>
+                                        <connections>
+                                            <action selector="goToBlogTapped:" destination="w9y-IN-Qjp" eventType="touchUpInside" id="yze-cP-uyG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYC-kP-12j">
+                                        <rect key="frame" x="0.0" y="454.5" width="331" height="83.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="GO TO WEB VIEW Kit"/>
+                                        <connections>
+                                            <segue destination="KyY-jB-LF2" kind="show" id="3vL-WU-UqL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oPm-oz-ceT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZKt-Bb-5Gh" firstAttribute="height" secondItem="vPy-hC-FB9" secondAttribute="height" multiplier="0.6" id="O7f-1M-bZ3"/>
+                            <constraint firstItem="ZKt-Bb-5Gh" firstAttribute="width" secondItem="vPy-hC-FB9" secondAttribute="width" multiplier="0.8" id="ide-kL-Y7z"/>
+                            <constraint firstItem="ZKt-Bb-5Gh" firstAttribute="centerX" secondItem="oPm-oz-ceT" secondAttribute="centerX" id="lQl-Bo-kay"/>
+                            <constraint firstItem="ZKt-Bb-5Gh" firstAttribute="centerY" secondItem="oPm-oz-ceT" secondAttribute="centerY" id="lsO-2U-jSs"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wHA-TD-Hmq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-759" y="82"/>
+        </scene>
+        <!--WebView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WebKitTestViewController" customModule="Safari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkL-Vq-du9">
+                                <rect key="frame" x="0.0" y="96" width="414" height="712"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIND SLOTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2b3-X4-1Ux">
+                                <rect key="frame" x="0.0" y="56" width="414" height="40"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DAZ-Sr-T1b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qkL-Vq-du9" secondAttribute="trailing" id="CF6-Ue-lHO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qkL-Vq-du9" secondAttribute="bottom" id="PgU-6h-P8s"/>
+                            <constraint firstItem="2b3-X4-1Ux" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QMq-gP-f2W"/>
+                            <constraint firstItem="2b3-X4-1Ux" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="adf-h6-fsR"/>
+                            <constraint firstItem="qkL-Vq-du9" firstAttribute="top" secondItem="2b3-X4-1Ux" secondAttribute="bottom" id="g8b-YH-xtZ"/>
+                            <constraint firstItem="qkL-Vq-du9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mDX-O1-Ebu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2b3-X4-1Ux" secondAttribute="trailing" id="oy1-Dj-S8V"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="WebView" id="f8F-ue-1oZ">
+                        <barButtonItem key="rightBarButtonItem" title="Google" id="9c3-eY-QtK">
+                            <connections>
+                                <action selector="googleBarButtonTapped:" destination="BYZ-38-t0r" id="qih-ER-GTA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="qkL-Vq-du9" id="T4Y-C4-kZc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757" y="73"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YGJ-bp-sUg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KyY-jB-LF2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="wZQ-a6-y1S"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cHs-Jl-TSj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="R94-v8-NXt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LjA-c9-yIb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80" y="73"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
